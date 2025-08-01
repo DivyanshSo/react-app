@@ -3,6 +3,7 @@ import "./App.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import FoodItems from "./components/FoodItems";
 import ErrorMessage from "./components/ErrorMessage";
+import Container from "./components/Container";
 
 
 function App() {
@@ -21,11 +22,23 @@ function App() {
   }
     */
   return (
-    <React.Fragment> 
-      <h1 className="food-heading">List of Healthy Foods</h1>
+    <React.Fragment>
+      <Container>
+        <h1 className="food-heading">List of Healthy Foods</h1>
 
-      <ErrorMessage items = {foodItems}></ErrorMessage>   
-      <FoodItems items = {foodItems}></FoodItems>
+        <ErrorMessage items = {foodItems}></ErrorMessage>   
+        <FoodItems items = {foodItems}></FoodItems>
+      </Container>
+      <Container>
+        <h2 className="food-heading">List of Unhealthy Foods</h2>
+        <FoodItems items = {['Chips', 'Soda', 'Candy', 'Fast Food']}></FoodItems>
+        
+      </Container>
+      <Container>
+          <p>
+            Above is the list of healthy and unhealthy foods, that you can consume in your daily diet.
+          </p>
+        </Container>
     </React.Fragment>
   );
 }

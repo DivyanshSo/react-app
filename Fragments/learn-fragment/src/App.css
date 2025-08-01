@@ -1,15 +1,6 @@
-.list-group-item kg-item {
-  background-color: rgb(28, 151, 151);
-}
-
-.kg-span {
-  font-weight: bold;
-  color: rgb(216, 23, 23);
-  
-}
 
 .food-heading {
-  background-color: rgb(117, 117, 181);
+  background-color: rgb(210, 210, 224);
   color: rgb(11, 93, 137);
-  
+  width: 100%;
 }

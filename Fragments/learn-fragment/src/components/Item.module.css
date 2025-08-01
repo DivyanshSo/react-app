@@ -1,0 +1,13 @@
+.kg-span {
+  font-weight: bold;
+  color: rgb(216, 23, 23);
+  
+}
+
+.list-group-item kg-item {
+  background-color: rgb(28, 151, 151);
+}
+
+.button {
+  float: right;
+}
