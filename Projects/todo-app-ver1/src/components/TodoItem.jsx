@@ -1,10 +1,4 @@
-import { useContext } from "react";
-
-function TodoItem({ todoName, todoDate}) {
-
-  
-  const {deleteItem} = useContext(TodoItemsContext);
-
+function TodoItem({ todoName, todoDate, onDeleteClick }) {
   return (
     <div className="container">
       <div className="row kg-row">
@@ -13,8 +7,8 @@ function TodoItem({ todoName, todoDate}) {
         <div className="col-2">
           <button
             type="button"
-            className="btn btn-danger kg-btn"
-            onClick={() => deleteItem(todoName)}
+            className="btn btn-danger kg-button"
+            onClick={() => onDeleteClick(todoName)}
           >
             Delete
           </button>
@@ -23,4 +17,5 @@ function TodoItem({ todoName, todoDate}) {
     </div>
   );
 }
+
 export default TodoItem;

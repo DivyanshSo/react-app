@@ -1,91 +1,11 @@
-h1 {
-  font-weight: 700;
-  font-size: 3rem;
-  margin: 10px 20px;
-  color: rgb(31, 230, 230);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  background-color: #f5ac59;
-}
-
 input {
   width: 100%;
-  padding: 20px 12px;
-  border: 2px solid black;
-  border-radius: 8px;
-  font-size: 1rem;
-  transition: border-color 0.3s ease;
-  background-color: #ebb992a6;
-
 }
 
-.input:focus {
-  outline: none;
-  border-color: rgb(31, 230, 230);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-}
-
-.items-container {
-  text-align: left;
-  margin-top: 2rem;
-
-}
-
-.kg-btn {
+.kg-button {
   min-width: 80px;
-  padding: 10px;
-  border: none;
-  border-radius: 6px;
-  font-weight: 600;
 }
 
 .kg-row {
   margin: 10px 5px;
-  padding: 15px;
-  background-color: var(--kg-color-bg);
-  border-radius: 8px;
-  transition: transform 0.2s ease;
-  display: flex;
-  align-items: center;
-}
-
-.kg-row :hover {
-  transform: translateY(-2px);
-  color: blue;
-}
-.btn-danger {
-  background-color: rgb(255, 0, 0);
-  color: white;
-}
-
-.btn-danger:hover {
-  background-color: #bb222f;
-  transform: scale(1.05);
-}
-
-.btn-success {
-  background-color: var(--success-color);
-  color: white;
-}
-
-.btn-success:hover {
-  background-color: #0d7d3b;
-  transform: scale(1.05);
-}
-
-.todo-form {
-  display: flex;
-  gap: 1rem;
-  margin-bottom: 2rem;
-  padding: 1.5rem;
-  background-color: var(--kg-color-bg);
-  border-radius: 10px;
-  flex-direction: column;
-}
-
-@media (max-width: 768px) {
-  .todo-container {
-    padding: 1rem;
-    margin: 1rem;
-  }
 }
