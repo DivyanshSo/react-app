@@ -4,10 +4,21 @@ import { PostList } from "../store/post-list-store";
 
 const Post = ({ post }) => {
   const {deletePost} = useContext(PostList);
+
+  const getImageUrl = (postId) => {
+    switch (postId) {
+      case '1':
+        return "https://wallpaperaccess.com/full/1616141.jpg";
+      case '2':
+        return "https://plus.unsplash.com/premium_photo-1713296255442-e9338f42aad8?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Z3JhZHVhdGV8ZW58MHx8MHx8fDA%3D";
+      default:
+        return "https://via.placeholder.com/300";
+    }
+  }
   return (
     <>
       <div className="card post-card" style={{ width: "30rem" }}>
-        <img src="https://wallpaperaccess.com/full/1616141.jpg" className="card-img-top" alt="..." />
+        <img src={getImageUrl(post.id)} className="card-img-top" alt = {post.title} />
         <div className="card-body">
           <h5 className="card-title">
             {post.title}
@@ -18,7 +29,7 @@ const Post = ({ post }) => {
           </h5>
           <p className="card-text">{post.body}</p>
           {post.tags.map((tag) => (
-            <span className="badge text-bg-primary hashtag">
+            <span key = {tag} className="badge text-bg-primary hashtag">
               {tag}
             </span>
           ))}

@@ -16,7 +16,17 @@
 .post-card {
     margin: 25px 50px;
     min-width: 30rem;
+    
+}
 
+.post-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
 }
 
 .hashtag {
@@ -28,4 +38,15 @@
     width: 100%;
     margin: 10px 0px;
     display: flex;
+}
+
+.create-post {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 50px;
+}
+
+.welcome-message {
+    margin-top: 5rem;
+    margin-bottom: 1rem;
 }

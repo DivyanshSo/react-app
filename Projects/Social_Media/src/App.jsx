@@ -21,7 +21,7 @@ function App() {
       setSelectedTab = {setSelectedTab}/>
       <div className="content">
         <Header/>
-        {selectedTab === "Home" ? <PostList></PostList> : <CreatePost></CreatePost>}
+        {selectedTab === "Home" ? (<PostList></PostList>) : (<CreatePost></CreatePost>)}
       
         <Footer/>
       </div>
